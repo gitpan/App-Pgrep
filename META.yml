@@ -1,0 +1,31 @@
+---
+name: App-Pgrep
+version: 0.01
+author:
+  - 'Curtis Poe <ovid@cpan.org>'
+abstract: PPI-powered grep
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+build_requires:
+  File::Next: 0.4
+  PPI: 1.118
+  Scalar::Util: 1.19
+  Test::More: 0
+provides:
+  App::Pgrep:
+    file: lib/App/Pgrep.pm
+    version: 0.01
+  App::Pgrep::Base:
+    file: lib/App/Pgrep/Base.pm
+    version: 0.01
+  App::Pgrep::Results:
+    file: lib/App/Pgrep/Results.pm
+    version: 0.01
+  App::Pgrep::Results::Token:
+    file: lib/App/Pgrep/Results/Token.pm
+    version: 0.01
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
